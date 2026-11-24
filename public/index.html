@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#04050b">
+  <title>Douzième Division – Collection de cartes</title>
+  <link rel="preload" href="fonts/cinzel-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <!-- Fond d'écran personnel (flou + assombri), visible uniquement par le joueur -->
+  <div id="wallpaper"></div>
+  <div id="wallpaperDim"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="mark">XII</span><span>Douzième Division</span></a>
+    <nav id="nav"></nav>
+  </header>
+
+  <!-- Accueil (non connecté) -->
+  <main id="landing" class="hero hidden">
+    <span class="xii" aria-hidden="true">XII</span>
+    <div class="hero-copy">
+      <h1>Douzième Division</h1>
+      <p class="lead">Un booster toutes les 4 heures : trois cartes, quatre raretés, et une collection à compléter avant les autres.</p>
+      <div id="loginBox"></div>
+      <p class="fine">Connexion avec ton compte Discord, sans mot de passe.</p>
+    </div>
+    <div class="fan" id="fan"></div>
+  </main>
+
+  <!-- Application (connecté) -->
+  <main id="view" class="hidden"></main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="audio.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

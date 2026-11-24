@@ -1,0 +1,13 @@
+{
+  "name": "douzieme-division",
+  "version": "1.0.0",
+  "description": "Site de collection de cartes : ouvre un booster toutes les 4 h",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.1.0",
+    "express": "^4.19.2"
+  }
+}
